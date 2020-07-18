@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 35</title>
+	<style type="text/css">
+		#dv1{
+			width: 100px;
+			height: 100px;
+			border:  1px solid #000;
+			position: absolute;
+			left:0px;
+			top: 0px;
+			background-color: #f00;
+		}
+	</style>
+</head>
+<body>
+
+<script>
+ function mudaCor() {
+ 	var obj=document.getElementById("dv1");
+ 	var r=Math.floor(Math.random()*255);
+ 	var g=Math.floor(Math.random()*255);
+ 	var b=Math.floor(Math.random()*255);
+ 	obj.style.backgroundColor="rgb("+r+","+g+","+b+")";
+ }
+setTimeout(mudaCor,1000);
+window.addEventListener('load',mudaCor);
+	</script>
+<body>
+<div id="dv1"></div>
+</body>
+</html>

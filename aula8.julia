@@ -1,0 +1,11 @@
+fistarray=[1,2,3,4,5] | > Int64[5]
+second=["this","is"] | > String[2]
+typeof(fistarray) | Vector{Int64}
+typeof(second)
+twodimen =[1 2 4 5 7]
+twodimen2=[1 2 4 5 7;2 4 5 6 7]
+table1 = [1 2 4 5 7;2 4 5 6 7;]
+
+table1[5] |2
+
+table1[1:19] |>Int64[19]

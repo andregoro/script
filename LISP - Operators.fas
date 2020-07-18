@@ -1,0 +1,132 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 1 (SETQ A 60)-1| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (60. |COMMON-LISP-USER|::|A|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|2 2 (SETQ B 13)-2| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (13. |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|4 4 (FORMAT T "~% BITWISE AND of a and b is ~a" ...)-3|
+   #25Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 73 02 40 33 02 15 19
+        01)
+   (#Y(#:|4 4 (FORMAT T "~% BITWISE AND of a and b is ~a" ...)-3-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ BITWISE AND of a and b is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|5 5 (FORMAT T "~% BITWISE INCLUSIVE OR of a and b is ~a" ...)-4|
+   #25Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 73 02 3E 33 02 15 19
+        01)
+   (#Y(#:|5 5 (FORMAT T "~% BITWISE INCLUSIVE OR of a and b is ~a" ...)-4-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ BITWISE INCLUSIVE OR of a and b is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|6 6 (FORMAT T "~% BITWISE EXCLUSIVE OR of a and b is ~a" ...)-5|
+   #25Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 73 02 3F 33 02 15 19
+        01)
+   (#Y(#:|6 6 (FORMAT T "~% BITWISE EXCLUSIVE OR of a and b is ~a" ...)-5-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ BITWISE EXCLUSIVE OR of a and b is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|7 7 (FORMAT T "~% A NOT B is ~a" ...)-6|
+   #24Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 72 E3 33 02 15 19
+        01)
+   (#Y(#:|7 7 (FORMAT T "~% A NOT B is ~a" ...)-6-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ A NOT B is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|8 8 (FORMAT T "~% A EQUIVALANCE B is ~a" ...)-7|
+   #25Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 73 02 41 33 02 15 19
+        01)
+   (#Y(#:|8 8 (FORMAT T "~% A EQUIVALANCE B is ~a" ...)-7-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ A EQUIVALANCE B is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|10 10 (TERPRI)-8| #16Y(00 00 00 00 00 00 00 00 20 01 38 01 31 97 19 01)
+   () (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|11 11 (TERPRI)-9| #16Y(00 00 00 00 00 00 00 00 20 01 38 01 31 97 19 01)
+   () (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|13 13 (SETQ A 10)-10| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (10. |COMMON-LISP-USER|::|A|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|14 14 (SETQ B 0)-11| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (0. |COMMON-LISP-USER|::|B|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|15 15 (SETQ C 30)-12| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (30. |COMMON-LISP-USER|::|C|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|16 16 (SETQ D 40)-13| #15Y(00 00 00 00 00 00 00 00 20 01 C5 0F 01 19 01)
+   (40. |COMMON-LISP-USER|::|D|)
+   (|COMMON-LISP|::|NIL| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|18 18 (FORMAT T "~% Result of bitwise and operation on 10, 0, 30, 40 is ~a" ...)-14|
+   #29Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 6B 04 6B 05 73 04 40
+        33 02 15 19 01)
+   (#Y(#:|18 18 (FORMAT T "~% Result of bitwise and operation on 10, 0, 30, 40 is ~a" ...)-14-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ Result of bitwise and operation on 10, 0, 30, 40 is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C| |COMMON-LISP-USER|::|D|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|19 19 (FORMAT T "~% Result of bitwise or operation on 10, 0, 30, 40 is ~a" ...)-15|
+   #29Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 6B 04 6B 05 73 04 3E
+        33 02 15 19 01)
+   (#Y(#:|19 19 (FORMAT T "~% Result of bitwise or operation on 10, 0, 30, 40 is ~a" ...)-15-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ Result of bitwise or operation on 10, 0, 30, 40 is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C| |COMMON-LISP-USER|::|D|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|20 20 (FORMAT T "~% Result of bitwise xor operation on 10, 0, 30, 40 is ~a" ...)-16|
+   #29Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 6B 04 6B 05 73 04 3F
+        33 02 15 19 01)
+   (#Y(#:|20 20 (FORMAT T "~% Result of bitwise xor operation on 10, 0, 30, 40 is ~a" ...)-16-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ Result of bitwise xor operation on 10, 0, 30, 40 is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C| |COMMON-LISP-USER|::|D|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|21 21 (FORMAT T "~% Result of bitwise eqivalance operation on 10, 0, 30, 40 is ~a" ...)-17|
+   #29Y(00 00 00 00 00 00 00 00 20 01 DA 6B 01 6B 02 6B 03 6B 04 6B 05 73 04 41
+        33 02 15 19 01)
+   (#Y(#:|21 21 (FORMAT T "~% Result of bitwise eqivalance operation on 10, 0, 30, 40 is ~a" ...)-17-1|
+       #23Y(00 00 00 00 02 00 00 00 21 18 DA B0 38 02 31 95 AE B0 31 90 9E 19
+            04)
+       ("\n
+ Result of bitwise eqivalance operation on 10, 0, 30, 40 is ")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+    |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|A|
+    |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C| |COMMON-LISP-USER|::|D|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curso de Javascript</title>
+	<script>
+		var texto="Curso de Javascript -Canal Fessor Bruno";
+		var resultado=texto.match("Canal")
+		document.write(resultado+ "<br>");
+	///////////////////////////////////////////////////////
+		var texto="Canal cAnal caNal canAl canaL canal CANAL";
+		var resultado=texto.match(/canal/gi);
+		document.write(resultado[0] + "<br>");
+		document.write(resultado.length+ "<br>");
+	///////////////////////////////////////////////////
+		var texto="Canal Fessor Bruno -Curso de Javascript -CFB";
+		var resultado=texto.search(/Curso/);
+		document.write(resultado+ "<br>");
+	///////////////////////////////////////////////////
+		var texto="Canal Fessor Bruno -Curso de Javascript -CFB";
+		var resultado=texto.replace(/cfb/i,"www.cfbcursos.com.br"+ "<br>");
+		document.write(resultado+ "<br>");
+	////////////////////////////////////////////////////////////////////////
+	var texto="Canal Fessor Bruno";
+	var resultado=texto.charAt(6);
+	document.write(resultado+ "<br>");
+	///////////////////////////////////////////////////////////////////////////
+	var resultado=texto.charCodeAt(6);
+	document.write(resultado+ "<br>");
+	/////////////////////////////////////////////////////////////////////////////
+	var txt1="Canal ";
+	var txt2="Fessor Bruno";
+	var resultado=txt1.concat(txt2);
+	document.write(resultado+ "<br>");
+	</script>
+</head>   
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+vari="an"
+print(vari)
+
+function c(a,b)
+    c=a+b
+    return c
+end
+print(c(10,10))
+print(c(10,9))

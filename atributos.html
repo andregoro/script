@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atributos</title>
+<style>
+#f{
+	width: 500px;
+	height: 700px;
+}
+.txth1{
+	background-image: url("n/Koala.jpg");
+}
+.txth2{
+	background-image: url("Penguins.jpg");
+}
+.txth3{
+	background-image: url("Jellyfish.jpg");
+}
+</style>
+<script>
+	function classe(c){
+		var obj=document.getElementById("f");
+	if (c==1) {
+		obj.setAttribute("class","txth1");
+	} else if (c==2) {
+		obj.setAttribute("class","txth2");
+	}else{
+		obj.setAttribute("class","txth3");
+	}
+}
+remov
+function remov() {
+	var obj=document.getElementById("f");
+	obj.removeAttribute("class");
+}
+function verifica() {
+	var obj=document.getElementById("f");
+	if(obj.hasAttribute("class")){
+		alert("Atributo classe esta  tag");
+	}else{
+		alert("Atributo classe esta nao tag");
+	}
+}
+</script>
+</head>
+	<body>
+		<button onclick="classe(1)">Carro 1</button>
+		<button onclick="classe(2)">Carro 2</button>
+		<button onclick="classe(3)">Carro 3</button>
+		<button onclick="remov()">Remove</button>
+		<button onclick="verifica()">Verifica</button>
+
+		<div id="f"></div>
+	</body>
+</html>

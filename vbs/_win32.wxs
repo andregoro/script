@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'windows-1252' ?>
+<Wix xmlns = 'http://schemas.microsoft.com/wix/2006/wi'>
+<Product Name = '' Id = '{DD48E2FA-A272-4272-BF5C-0972B2161CFC}' UpgradeCode = '{5CF688FD-0B0F-47B3-AA31-AAEABA732717}' Language = '1033' Codepage = '1252' Version = '1.0.0.0' Manufacturer = 'andregoro'>
+<Package InstallerVersion = "200" Id = '*' Platform = "x86" Keywords = 'Installer' Description = "char 2.0 Installer" Comments = 'This package will run ' Manufacturer = 'andregoro' Languages = '1033' Compressed = 'yes' SummaryCodepage = '1252' InstallPrivileges ="limited" InstallScope = "perUser" />
+<MajorUpgrade AllowSameVersionUpgrades = "no" DowngradeErrorMessage = "A newer version of  is already installed." />
+<Media Id = '1' Cabinet = 'setup.cab' EmbedCab = 'yes' DiskPrompt = 'CD - ROM #1' />
+<Property Id = 'DiskPrompt' Value = ' 1.0.0.0 Installation[1]' />
+<Icon Id = "MyIcon" SourceFile = "myicon.ico" />
+<Directory Id = 'TARGETDIR' Name = 'SourceDir'>
+<Directory Id = "ProgramMenuFolder">
+<Directory Id = "ApplicationProgramsFolder" Name = "andregoro " />
+</Directory>
+<Directory Id = "DesktopFolder" Name = "Desktop"/>
+<Directory Id = 'LocalAppDataFolder'>
+<Directory Id = 'INSTALLDIR' Name = 'andregoro'>
+</Directory>
+</Directory>
+</Directory>
+<DirectoryRef Id = 'INSTALLDIR'>
+<Component Win64 = "no" Id = 'MainScript' Guid = '{DB7753C7-A5EF-452D-9794-3C225EC3C0C3}'>
+<File Id = 'vbs_id' Name = '' DiskId = '1' Source = '' KeyPath = 'no' />
+<RegistryValue Root = "HKCU" Key = "Software\andregoro\" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RemoveFolder Id = "CleanUpMainFolder" On="uninstall" />
+</Component>
+</DirectoryRef>
+<DirectoryRef Id = 'DesktopFolder'>
+<Component Win64 = "no" Id = 'ApplicationShortcutDesktop' Guid = '{3E5B57DE-8E0B-4312-B34F-0AE777419A33}'>
+<Shortcut  Icon = "MyIcon" Id = "ApplicationDesktopShortcut" Name = "" Description = "This package will run " Target = "[SystemFolder32]wscript.exe" WorkingDirectory = "INSTALLDIR" Arguments = "&quot;[INSTALLDIR]&quot;" />
+<RegistryValue Root = "HKCU" Key = "Software\andregoro\" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+</Component>
+</DirectoryRef>
+<DirectoryRef Id = "ApplicationProgramsFolder">
+<Component Win64 = "no" Id = 'ApplicationShortcutStartmenu' Guid = '{81893F36-A734-4D3C-8EA8-7C54BA94A2C3}'>
+<Shortcut  Icon = "MyIcon" Id = "ApplicationStartMenuShortcut" Name = "" Description = "This package will run " Target = "[SystemFolder32]wscript.exe" WorkingDirectory = "INSTALLDIR" Arguments = "&quot;[INSTALLDIR]&quot;" />
+<RemoveFolder Id = "StartmenuFolder" On="uninstall" />
+<RegistryValue Root = "HKCU" Key = "Software\andregoro\" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+</Component>
+</DirectoryRef>
+<CustomAction Id='StartProgram' Directory='INSTALLDIR' Return='asyncNoWait' ExeCommand='&quot;[SystemFolder32]wscript.exe&quot; &quot;[INSTALLDIR]&quot;' />
+<Feature Id = 'Complete' Level = '1'>
+<ComponentRef Id = 'MainScript' />
+<ComponentRef Id = 'ApplicationShortcutDesktop' />
+<ComponentRef Id = 'ApplicationShortcutStartmenu' />
+</Feature>
+<InstallExecuteSequence>
+<Custom Action='StartProgram' After='InstallFinalize'>(REMOVE=&quot;&quot;)</Custom>
+</InstallExecuteSequence>
+</Product>
+</Wix>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String</title>
+</head>
+<body>
+	<p id="txt">CFB Curso</p>
+	<script>
+		var texto=document.getElementById("txt").innerHTML;
+
+		var res=texto.match("CF");
+		document.writeln(res.length);
+		
+		document.write("<br>");
+		document.write("<br>");
+
+		var res=texto.match(/CFB/g);
+		document.write(res +" : " +res.length);
+		
+		document.write("<br>");
+		document.write("<br>");
+
+		var res=texto.match(/CFB/ig);
+		document.write(res +" : " +res.length + " <br>");
+
+		var res=texto.match(/[oai]/ig);
+		document.write(res +" : <br>");
+
+
+		document.write(res[0]);		
+
+		var res=texto.match(/[*o-i]/ig);
+		document.write(res +" : <br>");
+		window.confirm('gostando')
+	</script>
+</body>
+</html>

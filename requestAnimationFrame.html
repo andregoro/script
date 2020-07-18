@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#jogador{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color:  #00f;
+			height: 50px;
+			width: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+		var jog;
+		var vel;
+		var dx;
+		var dy;
+		var px;
+		var py;
+		var anima;//=setInterval(fun,1000);
+
+		function inicia() {
+			vel=10000000;
+			dx=1;
+			dy=0;
+			px=0;
+			px=0;
+			jog=document.getElementById("jogador");
+			jog.addEventListener("click",function(){
+				cancelAnimationFrame(anima);
+			});
+			game();
+		}
+
+		function game() {
+			px+=dx*vel;
+			//py+=dy*vel;
+			jog.style.left=px+"px";
+			//jog.style.left=py+"px";
+
+		if (px >800) {dx=-1} else if(px < 0) { dx=1;}
+			anima=requestAnimationFrame(game);
+
+		}
+
+		window.addEventListener("load",inicia);
+	</script>
+</head>
+<body>
+	<div id="jogador"></div>
+</body>
+</html>

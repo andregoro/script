@@ -1,0 +1,115 @@
+http://www.rexamples.com/
+https://www.datamentor.io/r-programming/examples/simple-calculator/
+https://rpubs.com/Spencer_Butt_RPubs/301131
+
+
+
+https://www.google.com/search?client=firefox-b-ab&ei=Iy2ZXK6QMPnO5OUPxOi5mAY&q=exemple+algorithme+of+classification+in+r&oq=exemple+algorithme+of+classification+in+r&gs_l=psy-ab.3...8191.11913..12036...0.0..0.233.805.0j3j1......0....1..gws-wiz.......33i21.rBH-_i0RTuQ  ==> pesquisa
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+https://rstudio-pubs-static.s3.amazonaws.com/316172_a857ca788d1441f8be1bcd1e31f0e875.html  <-exemplo 1
+novo 1 http://rpubs.com/fbarth/labClusteringHierarquico
+
+
+codigo
+
+http://rpubs.com/fbarth/arvoreDecisao <- exemple 2
+
+codigo
+
+set.seed(1234)
+data(iris)
+ind <- sample(2, nrow(iris), replace = TRUE, prob = c(0.7, 0.3))
+trainData <- iris[ind == 1, ]
+testData <- iris[ind == 2, ]
+
+library(party)
+myFormula <- Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width
+iris_ctree <- ctree(myFormula, data = trainData)
+
+table(predict(iris_ctree), trainData$Species)
+
+print(iris_ctree)
+
+
+plot(iris_ctree)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+https://machinelearningmastery.com/machine-learning-in-r-step-by-step/
+
+https://pt.wikipedia.org/wiki/R_(linguagem_de_programa%C3%A7%C3%A3o)#Exemplo_1
+http://www2.ic.uff.br/~otton/graduacao/informaticaI/apresentacoes/linguagens_fora.pdf
+
+
+http://azautom.com.br/engenharia/probestat_livrokls.pdf
+
+
+
+
+https://www.showmetech.com.br/12-linux-leves-para-ressuscitar-um-pc-antigo/
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+https://rstudio-pubs-static.s3.amazonaws.com/316172_a857ca788d1441f8be1bcd1e31f0e875.html
+
+
+
+https://www.youtube.com/watch?v=Foxc7idJkyA&list=PLDnqrzRQmjru4qJUKrJNRTZVH81J8ZxNF
+
+
+https://www.youtube.com/watch?v=v3xn9MDmTaY&list=PLI76oaCSiF6QiLTAEW9rsnrPwL_WH6GQl
+
+
+https://www.youtube.com/watch?v=ejx3VxuIc8w&list=PLS1QulWo1RIaUGP446_pWLgTZPiFizEMq&index=2
+
+
+http://www.storiesinflight.com/js_videosub/jellies.srt
+
+amanha 
+
+prolog
+maratona bot
+materia de segunda 
+firewall
+livros de rede
+livros inteligencia
+
+https://seriesflixtv.com/assistir/arrow-2x20-dublado
+Link : https://drive.google.com/drive/folders/14mH5dJL04S6WVIh93pd_5zY3Kufp8XXA
+
+
+plugin bloqueador 
+ytp-miniplayer-ui
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+desenvolvimento e a perfecionamento realizado em rede qual sao os fatores que fizeram a interconxao de sistemas abertos e a nessecidade 
+
+descreva a funçao das 7 camadas do modelo OSI
+
+o que o a nalizador de protocolo
+
+em relaçao as caracteristica de final hall full,e duplex
+
+quais as topologias de redes locais existentes
+
+e posivel o corre comuniçao full dupex em dois fios
+
+quais as caracteriscas de rede wan man lan;
+
+como ocorre a resoluçao de indereço indereço internet eternet
+
+conseitue o congetionamente rotiamento em uma rede de pacotes
+
+que limita a velociadae e a distancia em redes locais
+
+
+

@@ -1,0 +1,26 @@
+            <table border="1">
+                    <tr>
+                        <th>Horas</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                        <th>Sabado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <td>1 Hs</td>
+                        <td id="cos1">Ingles</td>
+                        <td>Ingles</td>
+                        <td>Ingles</td>
+                        <td>Ingles</td>
+                        <td>Ingles</td>
+                        <td>Ingles</td>
+                        <td>Ingles</td>
+                    </tr>
+                    <tr>
+                        <td>Vilão</td>
+
+                    </tr>
+                </table>

@@ -1,0 +1,28 @@
+
+
+Imports System.Net.Mail
+Sub teste()
+
+Try
+'         Dim Smtp_Server As New SmtpClient
+         Dim e_mail As New MailMessage()
+         Smtp_Server.UseDefaultCredentials = False
+         Smtp_Server.Credentials = New Net.NetworkCredential("andregoro123456@gmail.com", "1232468369")
+         Smtp_Server.Port = 587
+         Smtp_Server.EnableSsl = True
+         Smtp_Server.Host = "smtp.gmail.com"
+
+         e_mail = New MailMessage()
+         e_mail.From = New MailAddress("andregoro123456@gmail.com")
+         e_mail.To.Add("andregoro123456@outlook.com")
+         e_mail.Subject = "Email Sending"
+         e_mail.IsBodyHtml = False
+         e_mail.Body = "test"
+         Smtp_Server.Send(e_mail)
+         MsgBox("Mail Sent")
+
+      Catch error_t As Exception
+         MsgBox(error_t.ToString)
+      End Try
+   End Sub
+   teste()

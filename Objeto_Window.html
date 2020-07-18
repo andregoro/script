@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            var mJ,mJ2;
+            var l,a,px,py,painel;
+            function abreJ(){
+               mJ=window.open("tmp.html","_blank","width=300,height=300,top=300,left=300");
+               mJ2=window.open("tmp.html","_blank","width=300,height=300,top=300,left=300");
+
+            }
+            function fechaJ(){
+                mJ.close();
+                mJ2.close();
+            }
+
+            l=window.innerWidth;
+            a=window.innerHeight;
+            function iniciar(){
+                painel=document.getElementById("painel");
+                painel.innerHTML=l;
+                var qtde=window.length+1;
+                painel.innerHTML=qtde;
+                for(var i=0;i<=qtde;i++){
+                    window.frames[i].location="http://cfbcursos.com.br";
+                }
+            }
+            window.scrollBy(800,1000);
+            window.addEventListener("load",iniciar);
+        </script>
+    </head>
+    <body>
+<button onclick="abreJ()">Abre nova Janela</button>
+<button onclick="fecha()">fecha nova Janela</button>
+<div id="painel"></div>
+<iframe name="cfb" src=""></iframe>
+<iframe name="cfb" src=""></iframe>
+</body>
+</html>
